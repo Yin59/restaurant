@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <div id = "map" style = "width: 900px; height: 580px"></div>
+            <script>
+                var mapOptions = {
+            center: ["<%=lat%>","<%=lon%>"],
+            zoom: "<%=zoom%>"
+            }
+
+            var map = new L.map('map', mapOptions);
+
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+            map.addLayer(layer);
+
+            marker.addTo(map);
+
+            </script>
+
+    </body>
+</html>

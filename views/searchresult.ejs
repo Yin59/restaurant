@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <H2>Restauants (<%= nRestaurants%>)</H2>
+        <ul>
+            <% for (var b of restaurants) { %>
+            <li>Restauant id: <a href="/read?_id=<%= r._id %>"><%= r.restaurant_id %></a></li>
+        </ul>
+    </body>
+</html>

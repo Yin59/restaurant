@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "cookie-session": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-formidable": "^1.2.0",
+    "formidable": "*",
+    "mongodb": "*",
+    "nodemon": "*"
+  },
+  "engine": "node >=10.19.0",
+  "scripts": {
+    "start": "node server"
+  }
+}

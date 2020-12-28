@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form action="/searchresult" method="POST" enctype="multipart/form-data">
+            Name: <input name="name" value=<%= restaurants.name%>><br>
+            Borough: <input name="borough" value=<%= restaurants.borough%>><br>
+            Cuisine: <input name="cuisine" value=<%= restaurants.cuisine%>><br>
+            Photo: <img src="data:<%= photoMimetype %>;base64, <%= photo%>" style="width: 100%" /> <br>
+            Street: <input name="street" value=<%= docs.address.street%>><br>
+            Building: <input name="building" value=<%= doc.address.building>><br>
+            zipcode: <input name="zipcode" value=<%= doc.address.zipcpde>><br>
+            Coord: <input name="coord" value=<%= doc.address.coord>><br>
+            Owner: <input name="owner" value=<%= restaurants.owner%><br>
+            <input type="file" name="filetoupload"><br>
+            <input type="hidden" name="_id" value=<%= booking._id %>>
+            <input type="submit" value="searchresult"> 
+        </form>
+    </body>
+</html>
